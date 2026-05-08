@@ -17,6 +17,8 @@ RUN mkdir -p plugins
 RUN wget https://raw.githubusercontent.com/EaglerX/EaglerX-Server/main/EaglerXServer.jar -O plugins/EaglerXServer.jar
 
 COPY start.sh .
+COPY server.properties .
+COPY eula.txt .
 
 RUN chmod +x start.sh
 
